@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Plans | LumenNodes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
+        .glass-card { 
+            background: rgba(15, 23, 42, 0.6); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.3);
+        }
+        .nav-glass { background: rgba(2, 6, 23, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #1e293b; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 nav-glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
+                <i class="fa-solid fa-cube text-sky-400"></i> Lumen<span class="text-sky-400">Nodes</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+                <a href="minecraft.html" class="text-sky-400">Minecraft</a>
+                <a href="vps.html" class="hover:text-sky-400 transition">VPS Hosting</a>
+                <a href="https://discord.gg/Mf6mTJbT6Kye" class="bg-indigo-600 hover:bg-indigo-700 px-5 py-2.5 rounded-lg font-bold transition">Join Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Minecraft <span class="text-sky-400">Hosting</span> Plans</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">Choose between our Budget (Xeon) or Premium (EPYC) nodes. High performance guaranteed for every player.</p>
+        </div>
+    </section>
+
+    <section class="pb-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-8 rounded-3xl flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold">Starter Plan</h3>
+                        <p class="text-slate-500 text-sm italic">Great for small SMPs</p>
+                    </div>
+                    <span class="bg-sky-500/10 text-sky-400 text-xs font-bold px-3 py-1 rounded-full border border-sky-500/20">2GB RAM</span>
+                </div>
+                
+                <div class="space-y-4 mb-8 flex-grow">
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-microchip text-sky-500 w-5"></i> 70% CPU Usage</div>
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-hard-drive text-sky-500 w-5"></i> 6 GB NVMe SSD</div>
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-shield-virus text-sky-500 w-5"></i> DDoS Protection</div>
+                </div>
+
+                <div class="bg-slate-900/50 p-4 rounded-2xl border border-slate-800 mb-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-sm text-slate-400">Intel Xeon E5</span>
+                        <span class="font-bold text-lg">₹60<span class="text-xs text-slate-500">/mo</span></span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-sky-400 font-bold">AMD EPYC 7B13</span>
+                        <span class="font-bold text-lg text-sky-400">₹160<span class="text-xs text-slate-500">/mo</span></span>
+                    </div>
+                </div>
+                <a href="https://discord.gg/Mf6mTJbT6Kye" class="w-full py-4 bg-sky-500 hover:bg-sky-600 rounded-xl text-center font-bold transition">Configure Now</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold">Basic Plan</h3>
+                        <p class="text-slate-500 text-sm italic">Standard performance</p>
+                    </div>
+                    <span class="bg-sky-500/10 text-sky-400 text-xs font-bold px-3 py-1 rounded-full border border-sky-500/20">4GB RAM</span>
+                </div>
+                <div class="space-y-4 mb-8 flex-grow">
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-microchip text-sky-500 w-5"></i> 100% CPU Usage</div>
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-hard-drive text-sky-500 w-5"></i> 12 GB NVMe SSD</div>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-2xl border border-slate-800 mb-6">
+                    <div class="flex justify-between items-center mb-3 text-slate-400"><span class="text-sm">Xeon E5</span><span class="font-bold text-white">₹120</span></div>
+                    <div class="flex justify-between items-center text-sky-400"><span class="text-sm font-bold">EPYC 7B13</span><span class="font-bold">₹200</span></div>
+                </div>
+                <a href="https://discord.gg/Mf6mTJbT6Kye" class="w-full py-4 bg-sky-500 hover:bg-sky-600 rounded-xl text-center font-bold transition">Configure Now</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col border-sky-500/40">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-sky-400">Pro Plan</h3>
+                        <p class="text-slate-500 text-sm italic">Most Popular Choice</p>
+                    </div>
+                    <span class="bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full">12GB RAM</span>
+                </div>
+                <div class="space-y-4 mb-8 flex-grow">
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-microchip text-sky-500 w-5"></i> 250% CPU Usage</div>
+                    <div class="flex items-center gap-3 text-slate-300"><i class="fa-solid fa-hard-drive text-sky-500 w-5"></i> 38 GB NVMe SSD</div>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-2xl border border-sky-500/20 mb-6">
+                    <div class="flex justify-between items-center mb-3 text-slate-400"><span class="text-sm">Xeon E5</span><span class="font-bold text-white">₹440</span></div>
+                    <div class="flex justify-between items-center text-sky-400"><span class="text-sm font-bold">EPYC 7B13</span><span class="font-bold">₹650</span></div>
+                </div>
+                <a href="https://discord.gg/Mf6mTJbT6Kye" class="w-full py-4 bg-sky-500 hover:bg-sky-600 rounded-xl text-center font-bold transition shadow-lg shadow-sky-500/20">Configure Now</a>
+            </div>
+
+            </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-center">
+        <p class="text-slate-500">© 2026 LumenNodes. High-Performance Gaming Solutions.</p>
+    </footer>
+
+</body>
+</html>
