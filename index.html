@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LumenNodes | High-Performance Hosting</title>
+    <title>LumenNodes | Premium High-Performance Hosting</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
         .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
         .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%); }
+        .feature-card:hover { border-color: #38bdf8; transform: translateY(-2px); transition: all 0.3s ease; }
     </style>
 </head>
 <body>
@@ -26,71 +27,148 @@
                 <a href="minecraft.html" class="hover:text-sky-400 transition">Minecraft</a>
                 <a href="vps.html" class="hover:text-sky-400 transition">VPS Hosting</a>
                 <a href="#about" class="hover:text-sky-400 transition">About Us</a>
-                <a href="https://discord.gg/Mf6mTJbT6Kye" class="bg-sky-500 hover:bg-sky-600 px-5 py-2.5 rounded-lg font-bold transition">
-                    <i class="fa-brands fa-discord mr-2"></i>Discord
+                <a href="https://discord.gg/Mf6mTJbT6Kye" target="_blank" class="bg-sky-500 hover:bg-sky-600 px-5 py-2.5 rounded-lg font-bold transition">
+                    <i class="fa-brands fa-discord mr-2"></i>Join Discord
                 </a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-40 pb-20 hero-gradient">
+    <section class="pt-48 pb-24 hero-gradient">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <span class="px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-bold mb-6 inline-block">
-                NEXT-GEN INFRASTRUCTURE
+                NEXT-GEN INFRASTRUCTURE ⚡
             </span>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Unleash the <span class="text-sky-400">Power</span> of Your Game</h1>
-            <p class="text-slate-400 text-xl max-w-2xl mx-auto mb-10">Premium hardware, DDoS protection, and 24/7 support. Join the future of high-performance hosting.</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Unleash the <span class="text-sky-400">Power</span> <br>of Your Game
+            </h1>
+            <p class="text-slate-400 text-xl max-w-2xl mx-auto mb-10">
+                Affordable, Stable, and High-Performance hosting optimized for large community servers and modded gameplay.
+            </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="minecraft.html" class="bg-sky-500 hover:bg-sky-600 px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-sky-500/20">Get Started</a>
-                <a href="#about" class="bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition border border-slate-700">Learn More</a>
+                <a href="minecraft.html" class="bg-sky-500 hover:bg-sky-600 px-10 py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-sky-500/20">
+                    View Minecraft Plans
+                </a>
+                <a href="#about" class="bg-slate-800 hover:bg-slate-700 px-10 py-4 rounded-xl font-bold text-lg transition border border-slate-700">
+                    Why Us?
+                </a>
             </div>
         </div>
     </section>
 
-    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="glass p-6 rounded-2xl text-center">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="glass p-6 rounded-3xl text-center border-slate-800">
             <div class="text-3xl font-bold text-sky-400">99.9%</div>
-            <div class="text-slate-500 text-sm">Uptime</div>
+            <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Uptime</div>
         </div>
-        <div class="glass p-6 rounded-2xl text-center">
+        <div class="glass p-6 rounded-3xl text-center border-slate-800">
             <div class="text-3xl font-bold text-sky-400">500+</div>
-            <div class="text-slate-500 text-sm">Clients</div>
+            <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Clients</div>
         </div>
-        <div class="glass p-6 rounded-2xl text-center">
+        <div class="glass p-6 rounded-3xl text-center border-slate-800">
             <div class="text-3xl font-bold text-sky-400">&lt;15ms</div>
-            <div class="text-slate-500 text-sm">Latency</div>
+            <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Latency</div>
         </div>
-        <div class="glass p-6 rounded-2xl text-center">
+        <div class="glass p-6 rounded-3xl text-center border-slate-800">
             <div class="text-3xl font-bold text-sky-400">24/7</div>
-            <div class="text-slate-500 text-sm">Support</div>
+            <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Support</div>
         </div>
     </div>
+
+    <section class="py-24 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Everything you need to <span class="text-sky-400">Succeed</span></h2>
+                <p class="text-slate-500">Premium features standard with every single plan.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl feature-card border-slate-800">
+                    <i class="fa-solid fa-microchip text-sky-400 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Extreme CPU Power</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Powered by Intel Xeon E5 & AMD EPYC processors for high TPS and zero lag.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl feature-card border-slate-800">
+                    <i class="fa-solid fa-shield-halved text-sky-400 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Enterprise DDoS Protection</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Keep your server online 24/7 with our advanced multi-layered DDoS mitigation.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl feature-card border-slate-800">
+                    <i class="fa-solid fa-bolt text-sky-400 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Instant Deployment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Your server is provisioned the second your payment is confirmed. No waiting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="py-24">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-4xl font-bold mb-6">Built by Gamers, <br><span class="text-sky-400">For Gamers.</span></h2>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    LumenNodes was founded in 2026 with one mission: to provide high-quality hosting at prices that don't break the bank. Unlike other hosts, we own our hardware and use high-clock speed processors to ensure your server never lags.
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    LumenNodes was founded with one mission: to provide high-quality hosting at prices that don't break the bank. Unlike other hosts, we use high-clock speed processors paired with NVMe SSDs to ensure your server never lags.
                 </p>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> No Overselling Resources</li>
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Customized Pterodactyl Panel</li>
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Instant Node Activation</li>
-                </ul>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                            <i class="fa-solid fa-check text-emerald-400"></i>
+                        </div>
+                        <span class="font-medium">No Overselling Resources</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                            <i class="fa-solid fa-check text-emerald-400"></i>
+                        </div>
+                        <span class="font-medium">Customized Pterodactyl Panel</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                            <i class="fa-solid fa-check text-emerald-400"></i>
+                        </div>
+                        <span class="font-medium">Optimized Network for India/Global</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass p-8 rounded-3xl relative overflow-hidden group">
-                <div class="absolute -top-24 -right-24 w-64 h-64 bg-sky-500/20 blur-3xl rounded-full"></div>
-                <i class="fa-solid fa-server text-[150px] opacity-10 absolute bottom-0 right-0"></i>
-                <h3 class="text-2xl font-bold mb-4">Our Infrastructure</h3>
-                <p class="text-slate-400">We utilize AMD EPYC 7B13 and Intel Xeon processors paired with NVMe SSDs to provide the fastest read/write speeds in the industry.</p>
+            <div class="glass p-10 rounded-[2.5rem] relative overflow-hidden group border-slate-800">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-sky-500/10 blur-3xl rounded-full"></div>
+                <h3 class="text-2xl font-bold mb-4">Enterprise Infrastructure</h3>
+                <p class="text-slate-400 mb-6 text-sm">We utilize AMD EPYC 7B13 and Intel Xeon processors paired with pure NVMe storage to provide the fastest read/write speeds possible.</p>
+                <div class="p-4 bg-slate-950/50 rounded-2xl border border-slate-800">
+                    <code class="text-sky-400 text-xs italic"># Node Performance Monitoring Active</code>
+                    <div class="mt-2 w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-sky-500 h-full w-[94%]"></div>
+                    </div>
+                    <div class="flex justify-between mt-2 text-[10px] uppercase font-bold text-slate-500">
+                        <span>Node Load</span>
+                        <span>94% Efficiency</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 border-t border-slate-900 py-12">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-slate-500">© 2026 LumenNodes Hosting. All rights reserved.</p>
+    <footer class="bg-slate-950 border-t border-slate-900 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <i class="fa-solid fa-bolt text-sky-400"></i> LumenNodes
+                </a>
+                <p class="text-slate-500 text-sm">Professional hosting designed for performance and reliability. Experience the difference today.</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h4 class="font-bold text-white mb-2">Quick Links</h4>
+                <a href="minecraft.html" class="text-slate-500 hover:text-sky-400 text-sm transition">Minecraft Plans</a>
+                <a href="vps.html" class="text-slate-500 hover:text-sky-400 text-sm transition">VPS Hosting</a>
+                <a href="https://discord.gg/Mf6mTJbT6Kye" class="text-slate-500 hover:text-sky-400 text-sm transition">Support Discord</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h4 class="font-bold text-white mb-2">Legal</h4>
+                <a href="terms.html" class="text-slate-500 hover:text-sky-400 text-sm transition">Terms of Service</a>
+                <a href="privacy.html" class="text-slate-500 hover:text-sky-400 text-sm transition">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-900 text-center">
+            <p class="text-slate-600 text-xs tracking-widest uppercase">© 2026 LumenNodes Hosting. All rights reserved.</p>
         </div>
     </footer>
 
