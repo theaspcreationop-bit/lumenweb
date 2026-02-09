@@ -1,76 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPS Hosting | LumenNodes</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Minecraft Hosting | LumenNodes - High Performance Servers</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="LumenNodes - Professional Minecraft Server Hosting" name="description" >
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <link id="colors" href="css/colors/scheme-03.css" rel="stylesheet" type="text/css" >
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
-        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%); }
+        .plan-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .plan-card:hover {
+            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.05);
+            transform: translateY(-5px);
+        }
+        .price-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body>
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
-                <i class="fa-solid fa-bolt text-indigo-400"></i> Lumen<span class="text-indigo-400">Nodes</span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html" class="hover:text-indigo-400 transition">Home</a>
-                <a href="minecraft.html" class="hover:text-indigo-400 transition">Minecraft</a>
-                <a href="vps.html" class="text-indigo-400">VPS Hosting</a>
-                <a href="https://discord.gg/Mf6mTJbT6Kye" class="bg-indigo-600 hover:bg-indigo-700 px-5 py-2.5 rounded-lg font-bold transition">Discord</a>
+<body class="dark-scheme">
+    <div id="wrapper">
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo.png" alt="LumenNodes">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="minecraft.html">Minecraft</a></li>
+                                    <li><a class="menu-item" href="vps.html">VPS Hosting</a></li>
+                                    <li><a class="menu-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="menu-item" href="https://discord.gg/Mf6mTJbT6Kye">Discord</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="https://discord.gg/Mf6mTJbT6Kye" class="btn-main btn-line"><span>Client Area</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </header>
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <section class="jarallax">
+                <img src="images/background/7.webp" class="jarallax-img" alt="">
+                <div class="container z-1000">
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-12">
+                            <div class="subtitle blink mb-4">Optimized for SMP, Survival, and Modded</div>
+                            <h1 class="text-uppercase"><span class="text-gradient">Minecraft</span> Server Plans</h1>
+                            <p class="slider-text">Professional hosting designed for performance and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4 text-center">
+                        <div class="col-lg-4">
+                            <div class="plan-card">
+                                <i class="fa fa-microchip text-gradient mb-3" style="font-size: 40px;"></i>
+                                <h4>Premium CPUs</h4>
+                                <p>Intel Xeon E5 & AMD EPYC 7B13 Options</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="plan-card">
+                                <i class="fa fa-shield text-gradient mb-3" style="font-size: 40px;"></i>
+                                <h4>DDoS Protection</h4>
+                                <p>Enterprise-grade protection for your community</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="plan-card">
+                                <i class="fa fa-bolt text-gradient mb-3" style="font-size: 40px;"></i>
+                                <h4>Instant Setup</h4>
+                                <p>Get your server running in under 5 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4" id="plans-container">
+                        </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container text-center">
+                    <div class="padding60 jarallax position-relative rounded-20 overflow-hidden">
+                        <img src="images/background/8.webp" class="jarallax-img" alt="">
+                        <div class="relative z-10">
+                            <h2 class="text-gradient">Ready to test?</h2>
+                            <h3>30-Minute Minecraft Server Trial</h3>
+                            <p>One trial per user. Subject to availability. Security fees may apply.</p>
+                            <a class="btn-main mt-3" href="https://discord.gg/Mf6mTJbT6Kye"><span>Claim Your Trial via Discord</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </nav>
 
-    <section class="pt-48 pb-32 hero-gradient px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold mb-8">
-                <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                </span>
-                UNDER DEVELOPMENT
-            </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Enterprise <span class="text-indigo-400">VPS</span> Solutions</h1>
-            <p class="text-slate-400 text-lg mb-10 leading-relaxed">
-                We are currently deploying our dedicated AMD EPYC™ 7B13 virtualization nodes. Get ready for lightning-fast NVMe storage and KVM isolation at unbeatable prices.
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-xl mx-auto mb-12">
-                <div class="glass p-4 rounded-2xl flex items-center gap-3">
-                    <i class="fa-solid fa-microchip text-indigo-400"></i>
-                    <span class="text-sm font-semibold">AMD EPYC™ Processors</span>
-                </div>
-                <div class="glass p-4 rounded-2xl flex items-center gap-3">
-                    <i class="fa-solid fa-rocket text-indigo-400"></i>
-                    <span class="text-sm font-semibold">DDR4 ECC Memory</span>
-                </div>
-                <div class="glass p-4 rounded-2xl flex items-center gap-3">
-                    <i class="fa-solid fa-shield-halved text-indigo-400"></i>
-                    <span class="text-sm font-semibold">Layer 7 DDoS Filter</span>
-                </div>
-                <div class="glass p-4 rounded-2xl flex items-center gap-3">
-                    <i class="fa-solid fa-terminal text-indigo-400"></i>
-                    <span class="text-sm font-semibold">Full Root Access</span>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/logo.png" alt="" >
+                        <p class="mt-3">LumenNodes – Professional Minecraft Hosting Plans. Affordable, Stable, and High Performance.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Links</h5>
+                        <ul>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Socials</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </footer>
+    </div>
 
-            <a href="https://discord.gg/Mf6mTJbT6Kye" class="inline-block bg-indigo-600 hover:bg-indigo-700 px-10 py-4 rounded-xl font-bold text-lg transition shadow-xl shadow-indigo-500/20">
-                Get Notified on Discord
-            </a>
-        </div>
-    </section>
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    
+    <script>
+        const plans = [
+            { name: "Starter Plan", ram: "2 GB", cpu: "70%", ssd: "6 GB", xeon: "60", epyc: "160" },
+            { name: "Basic Plan", ram: "4 GB", cpu: "100%", ssd: "12 GB", xeon: "120", epyc: "200" },
+            { name: "Plus Plan", ram: "8 GB", cpu: "200%", ssd: "25 GB", xeon: "240", epyc: "440" },
+            { name: "Pro Plan (12 GB)", ram: "12 GB", cpu: "250%", ssd: "38 GB", xeon: "440", epyc: "650" },
+            { name: "Advanced Plan", ram: "16 GB", cpu: "300%", ssd: "50 GB", xeon: "560", epyc: "850" },
+            { name: "Elite Plan", ram: "22 GB", cpu: "400%", ssd: "70 GB", xeon: "660", epyc: "1210" },
+            { name: "Ultra Plan", ram: "24 GB", cpu: "490%", ssd: "75 GB", xeon: "730", epyc: "1300" },
+            { name: "Extreme Plan", ram: "32 GB", cpu: "580%", ssd: "80 GB", xeon: "1280", epyc: "1920" },
+            { name: "Ultimate Plan", ram: "64 GB", cpu: "800%", ssd: "150 GB", xeon: "2560", epyc: "3840" }
+        ];
 
-    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-center">
-        <p class="text-slate-600 text-xs tracking-widest uppercase">© 2026 LumenNodes Hosting. All rights reserved.</p>
-    </footer>
-
+        const container = document.getElementById('plans-container');
+        container.innerHTML = plans.map(p => `
+            <div class="col-lg-4 col-md-6">
+                <div class="plan-card">
+                    <h3 class="text-gradient">${p.name}</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-check text-success me-2"></i><strong>${p.ram}</strong> RAM</li>
+                        <li><i class="fa fa-check text-success me-2"></i><strong>${p.cpu}</strong> CPU Usage</li>
+                        <li><i class="fa fa-check text-success me-2"></i><strong>${p.ssd}</strong> SSD Storage</li>
+                    </ul>
+                    <div class="price-box text-center">
+                        <div class="mb-2">
+                            <small class="text-secondary">Intel Xeon E5</small><br>
+                            <span class="h4">₹${p.xeon}</span><small>/mo</small>
+                        </div>
+                        <hr style="opacity: 0.1">
+                        <div>
+                            <small class="text-info">AMD EPYC 7B13</small><br>
+                            <span class="h4 text-info">₹${p.epyc}</span><small>/mo</small>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/Mf6mTJbT6Kye" class="btn-main btn-fullwidth"><span>Order Now</span></a>
+                </div>
+            </div>
+        `).join('');
+    </script>
 </body>
 </html>
